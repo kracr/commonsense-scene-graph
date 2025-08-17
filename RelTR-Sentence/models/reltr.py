@@ -111,7 +111,6 @@ class RelTR(nn.Module):
         # self.embeddings = nn.Parameter(self.setup_rgcn())
         self.knn_indices = torch.load('./knn_indices1.pt')
         self.indices_embeddings = torch.load('./indices_embeddings1.pt')
-        # self.embeddings = read_pickle_file('/home/ip_arul/chaitanya21248/RGCN/vg-sgg-data.pkl')
         self.num_rel_classes = num_rel_classes
         self.num_entities = num_entities
         self.transformer = transformer
